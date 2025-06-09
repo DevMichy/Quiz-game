@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: purple;
+    height: 10vh;
+    border-bottom: 2px solid purple;
+}
+.bg-color{
+    background: purple;
+    height: 90vh;
+}
+.update{
+    width: 100%;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+}
+.progress{
+    width: 20%;
+    height: 12vh;
+    margin-top: 2vh;
+    margin-left: 10px;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    border: 1px solid white;
+}
+.score{
+    width: 23%;
+    height: 12vh;
+    margin-top: 2vh;
+    margin-right: 10px;
+    font-size: 2em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    border: 1px solid white;
+}
+.quiz{
+    width: 60%;
+    margin-left: 20%;
+    height: 30vh;
+    font-size: 25px;
+    color: rgb(26, 1, 26);
+    margin-top: 3vh;
+    background: rgba(245, 244, 245, 0.795);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quiz-number{
+    width: 15%;
+    text-align: center;
+    font-size: 30px;
+    border: 4px double rgb(49, 1, 49);
+}
+.quiz-question{
+    margin: 20px;
+    text-align: center;
+}
+.options{
+    width: 60%;
+    height: 25vh;
+    margin-top: 3vh;
+    margin-left: 20%;
+}
+.btn{
+    width: 40%;
+    height: 7vh;
+    margin-top: 3vh;
+    margin-left: 6%;
+    border-radius: 30px;
+    color: white;
+    border: 1px solid white;
+    background: purple;
+    transition: all .5s;
+}
+.btn:hover{
+    background-color: rgb(223, 114, 223);
+    cursor: pointer;
+}
+.nav-btn{
+    width: 10%;
+    height: 6vh;
+    color: black;
+    background: rgb(223, 114, 223);
+    border: 1px solid white;
+    transition: all .5s;
+}
+.prev{
+    float: left;
+    margin-left: 5%;
+}
+.next{
+    float: right;
+    margin-right: 5%;
+}
+.nav-btn:hover{
+    background-color: purple;
+    color: white;
+}
+.retake{
+    display: none;
+    margin-left: 45%;
+    margin-top: -10%;
+}
