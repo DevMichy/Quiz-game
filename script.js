@@ -118,9 +118,10 @@ const startQuiz = () => {
     prevBtn.style.display = 'block';
     nextBtn.style.display = 'block';
     scoreBar.innerHTML = `Score: ${score}`;
-    progressBar.innerHTML = `${arrayNumber+1}/5`;
+    progressBar.innerHTML = `${arrayNumber+1}/${questions.length}`;
 
     resetOptions();
+    
     currentQuestion.answers.forEach(option => { 
         const button = document.createElement("button");
         button.innerHTML = option.text;
@@ -133,7 +134,7 @@ const startQuiz = () => {
         button.addEventListener('click', checkAnswer);
     })
 
-    if (arrayNumber === 4){
+    if (arrayNumber === (questions.length-1)){
         nextBtn.innerHTML = 'Submit';
     } else {
         nextBtn.innerHTML = 'Next';
